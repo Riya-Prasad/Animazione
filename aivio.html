@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Animazione Studio - Aivio</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="home">
+        <img src="./assets/Animazione.svg" alt="" />
+      </a>
+      <button
+        class="menu-toggle"
+        aria-label="open menu"
+        aria-expanded="false"
+        aria-controls="sheet"
+      >
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </header>
+
+    <button
+      id="to-top"
+      class="menu-toggle to-top-fixed"
+      aria-label="Back to top"
+      type="button"
+    >
+      ↑
+    </button>
+
+    <aside id="sheet" class="sheet" aria-hidden="true">
+      <nav class="sheet-nav" role="navigation" aria-label="main">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="projects.html">projects</a>
+        <a href="services.html">services</a>
+      </nav>
+      <div class="sheet-social">
+        <a href="#" aria-label="instagram">IG</a>
+        <a href="#" aria-label="facebook">FB</a>
+        <a href="#" aria-label="whatsapp">WA</a>
+      </div>
+      <a class="sheet-mail" href="mailto:info@animazione.in"
+        ><span>info@animazione.in</span></a
+      >
+    </aside>
+
+    <section id="landing-hero" class="hero">
+      <div class="hero__content">
+        <h1>Sell Homes Smarter, Faster, and More Visually.</h1>
+        <div class="right-side">
+          <p>
+            Step into immersive worlds that sell faster, engage deeper, and
+            inspire confidence.
+          </p>
+          <a href="#contact" class="btn-primary">Book Your Demo</a>
+        </div>
+      </div>
+
+      <div class="hero__video__sec">
+        <video
+          class="hero__video"
+          src="./assets/about-vid.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+        ></video>
+      </div>
+    </section>
+
+    <section class="scroll-text">
+      <h2>
+        <span class="blue">From Static to Dynamic.</span>
+        <span>Real</span> <span>estate</span> <span>deserves</span>
+        <span>more</span> <span>than</span> <span>flat</span>
+        <span>images</span> <span>and</span> <span>lifeless</span>
+        <span>brochures.</span> <span>Aivio</span> <span>transforms</span>
+        <span>every</span> <span>property</span> <span>into</span>
+        <span>an</span>
+        <span>experience—visual,</span>
+        <span>interactive,</span>
+        <span>and</span>
+        <span>unforgettable.</span>
+      </h2>
+    </section>
+
+    <section class="sales-section">
+      <div class="sales-shell">
+        <!-- LEFT SIDE -->
+        <div class="sales-left">
+          <h2>Turn every interaction into a high-impact sales moment</h2>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="sales-right">
+          <ul>
+            <li>
+              Experiences that transform curiosity into conviction, and
+              conviction into sales.
+            </li>
+            <li>
+              Immerse clients in lifelike spaces that feel instantly real and
+              emotionally compelling.
+            </li>
+            <li>
+              Shape every walkthrough around each buyer’s vision, creating
+              deeper connection and faster decisions.
+            </li>
+            <li>
+              Showcase authentic views, amenities, and neighborhood dynamics
+              with striking interactivity.
+            </li>
+            <li>
+              Visualization perfected through decades of mastery, trusted by
+              leading developers worldwide.
+            </li>
+          </ul>
+          <!-- METRICS ROW -->
+          <div class="sales-metrics">
+            <div class="metric">
+              <h3>1 million</h3>
+              <p>Total sq. ft. sold</p>
+            </div>
+            <div class="metric">
+              <h3>5X</h3>
+              <p>Conversion rate</p>
+            </div>
+            <div class="metric">
+              <h3>2000 Crore+</h3>
+              <p>Total sales value</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tab-section">
+      <!-- TAB NAV -->
+      <div class="tab-nav">
+        <button class="tab active" data-tab="tab1">3D tours</button>
+        <button class="tab" data-tab="tab2">Digitised location mapping</button>
+        <button class="tab" data-tab="tab3">Hyperreal customisation</button>
+        <button class="tab" data-tab="tab4">
+          Personalised apartment walkthrough
+        </button>
+        <button class="tab" data-tab="tab5">
+          Unit search & inventory management
+        </button>
+      </div>
+
+      <!-- TAB CONTENT -->
+      <div class="tab-content">
+        <!-- TAB 1 -->
+        <div class="tab-pane active" id="tab1">
+          <div class="text">
+            <h2>3D tours</h2>
+            <p>
+              Step inside hyper-real 3D spaces. Interactive hotspots guide every
+              corner, every detail.
+            </p>
+
+            <a href="#" class="btn">Know More</a>
+          </div>
+          <div class="image">
+            <img src="./assets/image1.jpg" alt="3D tours image" />
+          </div>
+        </div>
+
+        <!-- TAB 2 -->
+        <div class="tab-pane" id="tab2">
+          <div class="text">
+            <h2>Digitised Location Mapping</h2>
+            <p>
+              Explore neighbourhoods instantly. Schools, parks, transit, and
+              amenities at a glance.
+            </p>
+            <a href="#" class="btn">Know More</a>
+          </div>
+          <div class="image">
+            <img src="./assets/image2.jpg" alt="Location mapping" />
+          </div>
+        </div>
+
+        <!-- TAB 3 -->
+        <div class="tab-pane" id="tab3">
+          <div class="text">
+            <h2>Hyperreal Customisation</h2>
+            <p>
+              Visualize your vision. Change materials, furniture, and décor in
+              real time.
+            </p>
+            <a href="#" class="btn">Know More</a>
+          </div>
+          <div class="image">
+            <img src="./assets/image3.jpg" alt="Customisation" />
+          </div>
+        </div>
+        <!-- Tab 4 -->
+        <div class="tab-pane" id="tab4">
+          <div class="text">
+            <h2>Personalised Apartment Walkthrough</h2>
+            <p>
+              Experience every angle. Layouts, rooms, and balcony views come
+              alive.
+            </p>
+            <a href="#" class="btn">Know More</a>
+          </div>
+          <div class="image">
+            <img src="./assets/image4.JPEG" alt="Customisation" />
+          </div>
+        </div>
+        <!-- Tab 5 -->
+        <div class="tab-pane" id="tab5">
+          <div class="text">
+            <h2>Real-Time Inventory</h2>
+            <p>
+              Find and filter instantly. Live updates keep listings accurate and
+              sales seamless.
+            </p>
+            <a href="#" class="btn">Know More</a>
+          </div>
+          <div class="image">
+            <img src="./assets/image1.jpg" alt="Customisation" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    ></script>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    ></script>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"
+    ></script>
+
+    <script defer src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Animazione - Services</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="services-body">
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="home">
+        <img src="./assets/Animazione.svg" alt="" />
+      </a>
+      <button
+        class="menu-toggle"
+        aria-label="open menu"
+        aria-expanded="false"
+        aria-controls="sheet"
+      >
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </header>
+
+    <button
+      id="to-top"
+      class="menu-toggle to-top-fixed"
+      aria-label="Back to top"
+      type="button"
+    >
+      ↑
+    </button>
+
+    <aside id="sheet" class="sheet" aria-hidden="true">
+      <nav class="sheet-nav" role="navigation" aria-label="main">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="projects.html">projects</a>
+        <a href="services.html">services</a>
+      </nav>
+      <div class="sheet-social">
+        <a href="#" aria-label="instagram">IG</a>
+        <a href="#" aria-label="facebook">FB</a>
+        <a href="#" aria-label="whatsapp">WA</a>
+      </div>
+      <a class="sheet-mail" href="mailto:info@animazione.in"
+        ><span>info@animazione.in</span></a
+      >
+    </aside>
+
+    <section id="landing-hero" class="landing-hero" aria-label="intro">
+      <h1>
+        <span class="t1">OUR</span><br />
+        <span class="outline">SERVICES</span>
+      </h1>
+      <button id="to-loop" class="circle-btn" aria-label="Scroll to work">
+        <img src="./assets/arrow.png" alt="" />
+      </button>
+    </section>
+
+    <main id="services-main" class="services-page" data-services-root>
+      <div class="services-bg" aria-hidden="true"></div>
+
+      <section class="services-stages" aria-label="stages of work">
+        <article class="services-stage" id="stage-01">
+          <div class="services-stage__grid">
+            <!-- media pair (row 1, left) -->
+            <div class="services-stage__media">
+              <div class="services-media__stack">
+                <img
+                  class="services-media__main"
+                  data-speed="0.20"
+                  src="./assets/image1.jpg"
+                  alt="architectural visualisation"
+                />
+                <img
+                  class="services-media__tile"
+                  data-speed="-0.7"
+                  src="./assets/image2.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <!-- text (row 1, right) -->
+            <div class="services-stage__content">
+              <div class="services-stage__num" aria-hidden="true">01</div>
+              <h2 class="services-stage__title">ARCHITECTURAL VISUALISATION</h2>
+              <p class="services-stage__text">
+                see your space before it exists — turn plans into photorealistic
+                visuals that wow clients and investors.
+              </p>
+              <ul class="services-bullets">
+                <li>
+                  <strong>exterior & interior renders</strong> – every detail,
+                  perfectly captured
+                </li>
+                <li>
+                  <strong>360° walkthroughs & flythroughs</strong> – step inside
+                  anytime
+                </li>
+                <li>
+                  <strong>day & night lighting</strong> – spaces that shine in
+                  every light
+                </li>
+              </ul>
+            </div>
+
+            <!-- image grid (row 2, spans both columns) -->
+            <div class="services-media__grid">
+              <figure class="grid-item grid-item--wide">
+                <img src="./assets/image1.jpg" alt="" data-speed="0.14" />
+              </figure>
+              <figure class="grid-item">
+                <img src="./assets/image2.jpg" alt="" data-speed="-0.4" />
+              </figure>
+            </div>
+          </div>
+        </article>
+
+        <article class="services-stage services-stage--flip" id="stage-02">
+          <div class="services-stage__grid">
+            <div class="services-stage__media">
+              <div class="services-media__stack">
+                <img
+                  class="services-media__main"
+                  data-speed="0.20"
+                  src="./assets/image1.jpg"
+                  alt="drone photography & videography"
+                />
+                <img
+                  class="services-media__tile"
+                  data-speed="-0.7"
+                  src="./assets/image2.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="services-stage__content">
+              <div class="services-stage__num" aria-hidden="true">02</div>
+              <h2 class="services-stage__title">
+                DRONE PHOTOGRAPHY & VIDEOGRAPHY
+              </h2>
+              <p class="services-stage__text">
+                elevate your perspective — breathtaking aerial shots that show
+                scale, emotion, and design.
+              </p>
+              <ul class="services-bullets">
+                <li>
+                  <strong>licensed drone operations</strong> – safe &
+                  professional
+                </li>
+                <li><strong>cinematic 4k shots</strong> – photos & video</li>
+                <li>
+                  <strong>location reels & property overviews</strong> –
+                  highlight every angle
+                </li>
+              </ul>
+            </div>
+
+            <div class="services-media__grid">
+              <figure class="grid-item grid-item--wide">
+                <img src="./assets/image2.jpg" alt="" data-speed="0.12" />
+              </figure>
+              <figure class="grid-item">
+                <img src="./assets/image1.jpg" alt="" data-speed="-0.14" />
+              </figure>
+            </div>
+          </div>
+        </article>
+
+        <article class="services-stage" id="stage-03">
+          <div class="services-stage__grid">
+            <div class="services-stage__media">
+              <div class="services-media__stack">
+                <img
+                  class="services-media__main"
+                  data-speed="0.20"
+                  src="./assets/image1.jpg"
+                  alt="corporate films & vfx"
+                />
+                <img
+                  class="services-media__tile"
+                  data-speed="0.35"
+                  src="./assets/image2.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="services-stage__content">
+              <div class="services-stage__num" aria-hidden="true">03</div>
+              <h2 class="services-stage__title">CORPORATE FILMS & VFX</h2>
+              <p class="services-stage__text">
+                your brand, cinematically told — craft stories that stick with
+                high-end visuals and cinematic flair.
+              </p>
+              <ul class="services-bullets">
+                <li>
+                  <strong>scripted corporate films</strong> – stories that sell
+                  & inspire
+                </li>
+                <li>
+                  <strong>brand & product videos</strong> – engage, excite,
+                  convert
+                </li>
+                <li>
+                  <strong>motion graphics & vfx</strong> – unforgettable
+                  wow-factor
+                </li>
+              </ul>
+            </div>
+
+            <div class="services-media__grid">
+              <figure class="grid-item grid-item--wide">
+                <img src="./assets/image1.jpg" alt="" data-speed="0.14" />
+              </figure>
+              <figure class="grid-item">
+                <img src="./assets/image2.jpg" alt="" data-speed="-0.12" />
+              </figure>
+            </div>
+          </div>
+        </article>
+
+        <article class="services-stage services-stage--flip" id="stage-04">
+          <div class="services-stage__grid">
+            <div class="services-stage__media">
+              <div class="services-media__stack">
+                <img
+                  class="services-media__main"
+                  data-speed="0.20"
+                  src="./assets/image1.jpg"
+                  alt="digital marketing solutions"
+                />
+                <img
+                  class="services-media__tile"
+                  data-speed="-0.7"
+                  src="./assets/image2.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="services-stage__content">
+              <div class="services-stage__num" aria-hidden="true">04</div>
+              <h2 class="services-stage__title">DIGITAL MARKETING SOLUTIONS</h2>
+              <p class="services-stage__text">
+                be seen. be remembered. — from landing pages to campaigns, turn
+                clicks into clients.
+              </p>
+              <ul class="services-bullets">
+                <li>
+                  <strong>conversion-focused landing pages</strong> – leads that
+                  convert
+                </li>
+                <li>
+                  <strong>custom websites</strong> – unique & brand-perfect
+                </li>
+                <li>
+                  <strong>paid campaigns (meta, google, more)</strong> – reach
+                  the right audience
+                </li>
+                <li>
+                  <strong>social media strategy</strong> – grow engagement that
+                  lasts
+                </li>
+              </ul>
+            </div>
+
+            <div class="services-media__grid">
+              <figure class="grid-item grid-item--wide">
+                <img src="./assets/image1.jpg" alt="" data-speed="0.15" />
+              </figure>
+              <figure class="grid-item">
+                <img src="./assets/image2.jpg" alt="" data-speed="-0.12" />
+              </figure>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    ></script>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    ></script>
+    <script defer src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Animazione Studio - About</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- top bar -->
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="home">
+        <img src="./assets/Animazione.svg" alt="" />
+      </a>
+      <button
+        class="menu-toggle"
+        aria-label="open menu"
+        aria-expanded="false"
+        aria-controls="sheet"
+      >
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </header>
+
+    <button
+      id="to-top"
+      class="menu-toggle to-top-fixed"
+      aria-label="Back to top"
+      type="button"
+    >
+      ↑
+    </button>
+
+    <aside id="sheet" class="sheet" aria-hidden="true">
+      <nav class="sheet-nav" role="navigation" aria-label="main">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="projects.html">projects</a>
+        <a href="services.html">services</a>
+      </nav>
+      <div class="sheet-social">
+        <a href="#" aria-label="instagram">IG</a>
+        <a href="#" aria-label="facebook">FB</a>
+        <a href="#" aria-label="whatsapp">WA</a>
+      </div>
+      <a class="sheet-mail" href="mailto:info@animazione.in"
+        ><span>info@animazione.in</span></a
+      >
+    </aside>
+
+    <section id="story" class="text-video">
+      <div class="shell">
+        <div class="tv__copy">
+          <h2 class="tv__title">
+            Animazione is a creative, cinematic prop-tech studio founded in
+            India, built on the belief that architecture, brands, and ideas
+            deserve to be felt. Every ray of light, every camera move, every
+            frame is crafted with intent to tell stories that inspire clarity,
+            confidence, and conviction.
+          </h2>
+        </div>
+
+        <div class="tv__video-wrap">
+          <div class="video-texts">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Obcaecati totam, voluptatum nobis distinctio et in voluptas earum
+              officia eos quibusdam?
+            </p>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Praesentium assumenda dolores, totam fuga voluptatibus, excepturi
+              vero libero unde quae voluptatem at aliquam?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+              mollitia nostrum. Ducimus aliquam excepturi illo tempore tenetur
+              soluta dolorum exercitationem, fugiat suscipit, eligendi
+              praesentium reprehenderit officia numquam, facere beatae totam!
+            </p>
+          </div>
+          <video
+            class="tv__video"
+            src="./assets/vid1.mp4"
+            autoplay
+            playsinline
+            muted
+            loop
+            preload="metadata"
+          ></video>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR CULTURE (sticky image + exact text grid) -->
+    <section id="culture" class="about-culture" aria-label="our culture">
+      <div class="ac-shell">
+        <!-- left: sticky image anchored to bottom-left -->
+        <figure class="ac-media">
+          <img
+            src="./assets/image3.jpg"
+            alt="Studio culture in action"
+            width="900"
+            height="700"
+            loading="lazy"
+          />
+          <figcaption class="ac-kicker">
+            <span>see us</span><span class="in-action">in action</span>
+          </figcaption>
+          <span class="ac-bracket" aria-hidden="true"></span>
+        </figure>
+
+        <!-- right: text grid -->
+        <div class="ac-right">
+          <div class="ac-grid">
+            <!-- 1.0 -->
+            <article class="ac-cell ac-cell--1">
+              <h3 class="ac-num">1.0</h3>
+              <p>
+                At Animazione, culture is not just about how we work—it’s about
+                what we believe. We see architecture and ideas as living stories
+                waiting to be told. Every frame we create is designed to evoke
+                emotion, spark imagination, and give clarity to decisions. For
+                us, the measure of success isn’t a render—it’s the moment
+                someone feels a vision come alive.
+              </p>
+            </article>
+
+            <!-- 2.0 -->
+            <article class="ac-cell ac-cell--2">
+              <h3 class="ac-num">2.0</h3>
+              <p>
+                We blend art with engineering, cinema with technology. Our
+                culture thrives on this duality—where precision meets poetry,
+                and data meets design. Whether it’s a skyscraper, a home, or a
+                brand, we dive into the essence of what it stands for and
+                translate it into immersive experiences that go far beyond the
+                blueprint.
+              </p>
+            </article>
+
+            <!-- 3.0 -->
+            <article class="ac-cell ac-cell--3">
+              <h3 class="ac-num">3.0</h3>
+              <p>
+                Collaboration is our creative fuel. We believe great stories
+                aren’t built in isolation—they’re shaped through dialogue,
+                exploration, and trust. Every project challenges us to listen
+                deeply, push boundaries, and turn constraints into
+                breakthroughs. What starts as an idea on paper evolves into a
+                cinematic journey shaped by everyone involved.
+              </p>
+            </article>
+          </div>
+
+          <article class="ac-cell ac-cell--4">
+            <p class="ac-outro">
+              We visualize projects—we humanize them. At Animazione, culture is
+              about crafting stories that inspire clarity, confidence, and
+              conviction—stories that are felt, long before they are built.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    ></script>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    ></script>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"
+    ></script>
+
+    <script defer src="main.js"></script>
+  </body>
+</html>

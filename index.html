@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Animazione Studio</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- top bar -->
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="home">
+        <img src="./assets/Animazione.svg" alt="" />
+      </a>
+      <button
+        class="menu-toggle"
+        aria-label="open menu"
+        aria-expanded="false"
+        aria-controls="sheet"
+      >
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </header>
+
+    <button
+      id="to-top"
+      class="menu-toggle to-top-fixed"
+      aria-label="Back to top"
+      type="button"
+    >
+      ↑
+    </button>
+
+    <aside id="sheet" class="sheet" aria-hidden="true">
+      <nav class="sheet-nav" role="navigation" aria-label="main">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="projects.html">projects</a>
+        <a href="services.html">services</a>
+      </nav>
+      <div class="sheet-social">
+        <a href="#" aria-label="instagram">IG</a>
+        <a href="#" aria-label="facebook">FB</a>
+        <a href="#" aria-label="whatsapp">WA</a>
+      </div>
+      <a class="sheet-mail" href="mailto:info@animazione.in"
+        ><span>info@animazione.in</span></a
+      >
+    </aside>
+
+    <section id="landing-hero" class="landing-hero" aria-label="intro">
+      <h1>
+        <span class="t1">HELLO,</span><br />
+        WE ARE <span class="outline">ANIMAZIONE</span>
+      </h1>
+      <p class="tag">Real Estate Visualization Studio</p>
+      <button id="to-loop" class="circle-btn" aria-label="Scroll to work">
+        <img src="./assets/arrow.png" alt="" />
+      </button>
+    </section>
+
+    <!-- hero -->
+    <section id="hero" aria-label="hero slideshow">
+      <article class="panel" data-type="video" aria-hidden="true">
+        <video class="media" muted playsinline loop preload="metadata">
+          <source src="./assets/vid1.mp4" type="video/mp4" />
+        </video>
+        <h1>HELLO WORLD</h1>
+      </article>
+
+      <article class="panel" data-type="image" aria-hidden="true">
+        <img class="media" src="./assets/image1.jpg" alt="" />
+        <h1>HELLO WORLD</h1>
+      </article>
+
+      <article class="panel" data-type="video" aria-hidden="true">
+        <video class="media" muted playsinline loop preload="metadata">
+          <source src="./assets/vid2.mp4" type="video/mp4" />
+        </video>
+        <h1>HELLO WORLD</h1>
+      </article>
+
+      <article class="panel active" data-type="image" aria-hidden="false">
+        <img class="media" src="./assets/image2.jpg" alt="" />
+        <h1>HELLO WORLD</h1>
+      </article>
+
+      <article class="panel" data-type="video" aria-hidden="true">
+        <video class="media" muted playsinline loop preload="metadata">
+          <source src="./assets/vid3.mp4" type="video/mp4" />
+        </video>
+        <h1>HELLO WORLD</h1>
+      </article>
+
+      <article class="panel active" data-type="image" aria-hidden="false">
+        <img class="media" src="./assets/image4.JPEG" alt="" />
+        <h1>HELLO WORLD</h1>
+      </article>
+
+      <article class="panel" data-type="video" aria-hidden="true">
+        <video class="media" muted playsinline loop preload="metadata">
+          <source src="./assets/vid2.mp4" type="video/mp4" />
+        </video>
+        <h1>HELLO WORLD</h1>
+      </article>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
